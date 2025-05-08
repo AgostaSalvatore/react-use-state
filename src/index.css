@@ -54,3 +54,7 @@ p{
     transition: 0.3s;
 }
 
+.btn.active {
+    background-color:#fcad03;
+}
+
