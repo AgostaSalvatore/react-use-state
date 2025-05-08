@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #0d6ffc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
