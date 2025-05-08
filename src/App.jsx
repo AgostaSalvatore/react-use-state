@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <>
-      <div>
+      <div className='big-container'>
         <h1>Learn Web Development</h1>
       </div>
       <div className='container'>
