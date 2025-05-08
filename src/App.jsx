@@ -6,13 +6,8 @@ import languages from './data/languages'
 const App = () => {
   const [activeLanguage, setActiveLanguage] = useState(null)
 
-  const toggleLanguage = (language) => {
-    if (activeLanguage && activeLanguage.id === language.id) {
-      setActiveLanguage(null)
-    } else {
-      setActiveLanguage(language)
-    }
-  }
+  const toggleLanguage = (language) =>
+    setActiveLanguage(activeLanguage?.id === language.id ? null : language)
 
   return (
     <>
