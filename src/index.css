@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -22,4 +23,22 @@ ul {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    max-width: 28vw;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-size: 0.8rem;
+    line-height: 1.5;
 }

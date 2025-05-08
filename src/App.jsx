@@ -1,30 +1,21 @@
-import React from 'react'
-import languages from './data/languages'
+import React, { useState } from 'react'
+import AccordionTop from './components/accordion/AccordionTop'
+import AccordionContent from './components/accordion/AccordionContent'
 
 const App = () => {
-  console.log(languages)
+  const [activeLanguage, setActiveLanguage] = useState(null)
+
   return (
     <>
-    <div>
-      <h1>Learn Web Development</h1>
-    </div>
-    <div className='container'>
-      <div className="accordion">
-        <div className="accordion-item">
-          <ul>
-        {languages.map(language => (
-          <li key={language.id}>
-            <button className='btn'>
-                {language.title}
-            </button>
-          </li>
-        ))}
-      </ul>
+      <div>
+        <h1>Learn Web Development</h1>
+      </div>
+      <div className='container'>
+        <div className="accordion">
+          <AccordionTop />
         </div>
       </div>
-    </div>
     </>
-    
   )
 }
 
