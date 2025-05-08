@@ -1,4 +1,6 @@
-const AccordionContent = () => {
+import React from "react";
+
+const AccordionContent = ({ activeLanguage }) => {
     return (
         <div>
             <div className="accordion-content">

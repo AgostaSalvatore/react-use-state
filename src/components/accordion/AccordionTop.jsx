@@ -1,7 +1,7 @@
 import React from 'react'
 import languages from '../../data/languages'
 
-const AccordionTop = () => {
+const AccordionTop = ({ setActiveLanguage }) => {
     return (
         <div>
             <div className="accordion-buttons">
