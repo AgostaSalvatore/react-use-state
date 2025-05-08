@@ -48,3 +48,9 @@ p{
     font-size: 0.8rem;
     line-height: 1.5;
 }
+
+.btn:hover{
+    background-color:#fcad03;
+    transition: 0.3s;
+}
+
