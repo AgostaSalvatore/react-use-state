@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import AccordionTop from './components/accordion/AccordionTop'
 import AccordionContent from './components/accordion/AccordionContent'
-import languages from './data/languages'
 
 const App = () => {
   const [activeLanguage, setActiveLanguage] = useState(null)
-
-  const toggleLanguage = (language) =>
-    setActiveLanguage(activeLanguage?.id === language.id ? null : language)
 
   return (
     <>
@@ -16,7 +12,7 @@ const App = () => {
       </div>
       <div className='container'>
         <div className="accordion">
-          <AccordionTop setActiveLanguage={toggleLanguage} />
+          <AccordionTop setActiveLanguage={setActiveLanguage} />
           <AccordionContent activeLanguage={activeLanguage} />
         </div>
       </div>
